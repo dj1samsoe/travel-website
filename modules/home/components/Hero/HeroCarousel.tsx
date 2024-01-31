@@ -13,8 +13,8 @@ export default function HeroCarousel() {
       renderCenterLeftControls={({ previousSlide }) => null}
       renderCenterRightControls={({ nextSlide }) => null}
       renderBottomCenterControls={({ slideCount, currentSlide, goToSlide }) => (
-        <div className="slider-control-bottomcenter">
-          <ul className="flex gap-1 bg-sky-500 w-screen h-fit justify-center">
+        <div className="slider-control-bottomcenter max-w-screen-2xl">
+          <ul className="flex gap-1h-fit justify-center px-10">
             {Array.from({ length: slideCount }).map((_, index) => (
               <li key={index}>
                 <button

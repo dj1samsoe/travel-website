@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default function Menu() {
   const isMobile = useIsMobile();
-  const imageSize = isMobile ? 100 : 100;
+  const imageSize = isMobile ? 75 : 75;
   const { isOpen, toggleMenu } = useMenu();
 
   useEffect(() => {

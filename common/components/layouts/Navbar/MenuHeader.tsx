@@ -38,8 +38,8 @@ export default function MenuHeader({
         <Image
           src={isVisible ? "/logo-2.png" : "/logo.png"}
           alt="navbar-logo"
-          width={expandMenu ? 100 : imageSize * 0.9}
-          height={expandMenu ? 100 : imageSize * 0.9}
+          width={imageSize}
+          height={imageSize}
           className="lg:hover:scale-105"
         />
       </Link>
