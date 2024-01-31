@@ -2,6 +2,7 @@
 
 import React, { ReactNode } from "react";
 import Navbar from "./Navbar/Index";
+import { Providers } from "./providers";
 
 interface LayoutsProps {
   children: ReactNode;
@@ -9,11 +10,11 @@ interface LayoutsProps {
 
 export default function Layouts({ children }: LayoutsProps) {
   return (
-    <React.Fragment>
+    <Providers>
       <header>
         <Navbar />
       </header>
       <main className="min-h-screen max-w-screen-2xl">{children}</main>
-    </React.Fragment>
+    </Providers>
   );
 }
