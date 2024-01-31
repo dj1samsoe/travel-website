@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Featured() {
   return (
-    <section className="flex flex-col items-center justify-center px-16 py-20">
+    <section className="flex flex-col items-center justify-center md:px-16 px-5 pt-20 pb-10">
       <h1 className="text-xl font-bold uppercase">Also Featured In</h1>
       <div className="w-full overflow-x-scroll no-scrollbar py-5">
         <div className="flex gap-10">
