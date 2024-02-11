@@ -4,6 +4,7 @@ import Featured from "./Featured/Featured";
 import BestTrip from "./BestTrip/BestTrip";
 import Explore from "./Explore/Explore";
 import RecentSearch from "./RecentSearch/RecentSearch";
+import Locations from "./LocationSearch/Locations";
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <BestTrip />
       <Explore />
       <RecentSearch />
+      <Locations />
     </>
   );
 }
