@@ -19,6 +19,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.0.1",
+    "react-use-draggable-scroll": "^0.4.7",
     "usehooks-ts": "^2.10.0",
     "zustand": "^4.5.0"
   },
