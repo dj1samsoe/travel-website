@@ -5,6 +5,7 @@ import BestTrip from "./BestTrip/BestTrip";
 import Explore from "./Explore/Explore";
 import RecentSearch from "./RecentSearch/RecentSearch";
 import Locations from "./LocationSearch/Locations";
+import Stories from "./Stories/Stories";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Explore />
       <RecentSearch />
       <Locations />
+      <Stories />
     </>
   );
 }
