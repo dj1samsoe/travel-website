@@ -13,9 +13,9 @@ export default function Explore() {
     <section className="flex flex-col items-center justify-center md:px-16 px-5 pt-10 pb-20">
       <div className="flex w-full items-center justify-between">
         <div className="flex flex-col space-y-3 pb-5">
-          <h1 className="text-3xl font-bold">Plan your best trip ever</h1>
-          <p className="text-md font-medium">
-            Making the Most of Your Travel Experience in 2023
+          <h1 className="text-3xl font-bold">Top Locations to Explore</h1>
+          <p className="text-lg font-medium">
+            Here are some of the most visited places in 2023
           </p>
         </div>
         {isMobile ? null : (
@@ -39,7 +39,7 @@ export default function Explore() {
             currentSlide,
             goToSlide,
           }) => null}
-          cellSpacing={10}
+          cellSpacing={16}
         >
           {EXPLORE.map((items, index) => (
             <ExploreCard key={index} {...items} />

@@ -13,7 +13,7 @@ export default function BestTrip() {
       <div className="flex w-full items-center justify-between">
         <div className="flex flex-col space-y-3 pb-5">
           <h1 className="text-3xl font-bold">Plan your best trip ever</h1>
-          <p className="text-md font-medium">
+          <p className="text-lg font-medium">
             Making the Most of Your Travel Experience in 2023
           </p>
         </div>
@@ -23,7 +23,7 @@ export default function BestTrip() {
           </Button>
         )}
       </div>
-      <div className="w-full flex gap-5 py-5">
+      <div className="w-full flex py-5">
         <Carousel
           slidesToShow={isMobile ? 1 : 3}
           renderCenterLeftControls={({ previousSlide }) => null}
@@ -33,7 +33,7 @@ export default function BestTrip() {
             currentSlide,
             goToSlide,
           }) => null}
-          cellSpacing={10}
+          cellSpacing={16}
         >
           {DESTINATIONS.map((destination, index) => (
             <DestinationCard key={index} {...destination} />
