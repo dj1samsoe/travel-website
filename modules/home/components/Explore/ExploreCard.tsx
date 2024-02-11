@@ -22,7 +22,7 @@ export default function ExploreCard({
         height={400}
         className="object-fit rounded-3xl pb-2"
       />
-      <p className="text-md text-neutral-700">{location}</p>
+      <p className="text-md text-neutral-700 font-medium">{location}</p>
       <h1 className="text-xl mt-5 font-bold">{title}</h1>
     </Card>
   );
