@@ -24,11 +24,11 @@ export default function Stories() {
           </Button>
         )}
       </div>
-      <div className="grid sm:grid-cols-2 grid-cols-1 gap-7 pb-10">
+      <article className="grid sm:grid-cols-2 grid-cols-1 gap-7 pb-10">
         {STORIES.map((items, index) => (
           <StoriesCard key={index} {...items} />
         ))}
-      </div>
+      </article>
       {isMobile && (
         <Button colorScheme="blue" variant="outline" rounded={"full"}>
           View All Stories

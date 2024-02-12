@@ -13,6 +13,7 @@ import MenuItems from "./MenuItems";
 import useIsMobile from "@/common/hooks/useIsMobile";
 import { BiSearch } from "react-icons/bi";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Menu() {
   const isMobile = useIsMobile();
@@ -31,32 +32,38 @@ export default function Menu() {
     };
   }, [isOpen]);
 
+  const pathname = usePathname();
+  const hideNavbar = pathname === "/login" || pathname === "/sign-up";
+
   return (
     <div className={clsx("md:p-0 p-5 w-full md:border-none", isOpen && "pb-0")}>
       <div className="flex items-center justify-between">
         <MenuHeader expandMenu={isOpen} imageSize={imageSize} />
-        <div className="hidden md:flex">
-          <MenuItems />
-        </div>
-        <div className="hidden md:flex gap-5 items-center">
-          <BiSearch size={25} />
-          <Link
-            href={"/sign-up"}
-            aria-label="Sign Up"
-            target="_blank"
-            className="text-lg font-medium"
-          >
-            Sign Up
-          </Link>
-          <Link
-            href={"/login"}
-            aria-label="Login"
-            target="_blank"
-            className="text-black bg-white px-5 py-2 rounded-full font-medium text-lg"
-          >
-            Login
-          </Link>
-        </div>
+        {!hideNavbar && (
+          <>
+            <div className="hidden md:flex">
+              <MenuItems />
+            </div>
+            <div className="hidden md:flex gap-5 items-center">
+              <BiSearch size={25} />
+              <Link
+                href={"/sign-up"}
+                aria-label="Sign Up"
+                className="text-lg font-medium"
+              >
+                Sign Up
+              </Link>
+              <Link
+                href={"/login"}
+                aria-label="Login"
+                className="text-black bg-white px-5 py-2 rounded-full font-medium text-lg"
+              >
+                Login
+              </Link>
+            </div>
+          </>
+        )}
+
         {isMobile && (
           <div
             className={clsx(
