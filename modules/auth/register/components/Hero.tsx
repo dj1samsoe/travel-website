@@ -2,7 +2,6 @@ import Breakline from "@/common/components/elements/Breakline";
 import { Button, Checkbox, Input } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
-import { FaEye } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
 export default function Hero() {
