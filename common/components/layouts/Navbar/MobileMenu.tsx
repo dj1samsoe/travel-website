@@ -13,17 +13,17 @@ export const MobileMenu: FC = () => {
       <div>
         <ul className="flex flex-col space-y-5 items-center text-quaternary-black font-medium">
           <li>
-            <Link href={"/#"} aria-label="destination" target="_blank">
+            <Link href={"/destination"} aria-label="destination">
               Destination
             </Link>
           </li>
           <li>
-            <Link href={"/#"} aria-label="stories" target="_blank">
+            <Link href={"/#"} aria-label="stories">
               Stories
             </Link>
           </li>
           <li>
-            <Link href={"/#"} aria-label="reviews" target="_blank">
+            <Link href={"/#"} aria-label="reviews">
               Reviews
             </Link>
           </li>

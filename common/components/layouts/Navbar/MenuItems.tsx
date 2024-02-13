@@ -5,7 +5,7 @@ export default function MenuItems() {
     <div className="flex items-center">
       <ul className="flex gap-5 items-center text-lg font-medium">
         <li>
-          <Link href={"/#"} aria-label="destination">
+          <Link href={"/destination"} aria-label="destination">
             Destination
           </Link>
         </li>
