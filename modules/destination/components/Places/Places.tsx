@@ -12,7 +12,7 @@ export default function Places() {
           <PlacesCard key={index} {...place} />
         ))}
       </div>
-      <div className="flex items-center gap-7">
+      <div className="flex items-center sm:gap-7 gap-3">
         <IoIosArrowBack />
         <div className="flex gap-2">
           <Button colorScheme="messenger" variant="solid" rounded={"md"}>

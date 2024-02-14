@@ -19,8 +19,8 @@ export default function SearchFilters() {
               <FiSearch className="text-neutral-500 mr-4" size={20} />
             </InputRightElement>
           </InputGroup>
-          <div className="flex gap-5">
-            <div className="flex flex-col space-y-3 w-1/2">
+          <div className="flex md:flex-row flex-col gap-5">
+            <div className="flex flex-col space-y-3 md:w-1/2 w-full">
               <h1 className="text-xl font-semibold">Filter by type of place</h1>
               <Select
                 placeholder="All Types"
@@ -34,7 +34,7 @@ export default function SearchFilters() {
                 <option value="option3">Waterfall</option>
               </Select>
             </div>
-            <div className="flex flex-col space-y-3 w-1/2">
+            <div className="flex flex-col space-y-3 md:w-1/2 w-full">
               <h1 className="text-xl font-semibold">Sort by</h1>
               <Select
                 placeholder="Most Popular"
