@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="flex w-full min-h-screen">
       <div
-        className="w-full h-screen object-fit md:block hidden"
+        className="w-full h-screen object-cover"
         style={{
           backgroundImage: "url('/hero-destination.png')",
           backgroundPosition: "top, center",
