@@ -1,3 +1,3 @@
-import DestinationPage from "./components/Destination";
+import DestinationPage from "./(main)/components/Destination";
 
 export default DestinationPage;
