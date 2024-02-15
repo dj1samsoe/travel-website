@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) projects for Slicing Design in [Figma](<https://www.figma.com/file/ljanXNs9S4yg0Zcw0EjuKk/TRAVEL-WEBSITE-DESIGN-(-TRAVEL-PULSE)-(Community)?type=design&node-id=256%3A2178&mode=design&t=e8PISc62QLNGenQ6-1>)
 
 ## Getting Started
 
