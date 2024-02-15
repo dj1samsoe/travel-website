@@ -7,15 +7,17 @@ export default function OtherPlaces() {
   return (
     <section className="w-full min-h-screen flex flex-col space-y-5 md:px-16 px-5 pb-24">
       <div className="flex flex-col space-y-5 pb-10">
-        <p className="text-lg font-semibold text-[#4169E1] tracking-widest">
+        <p className="text-lg font-semibold text-[#4169E1] tracking-widest sm:text-start text-center">
           03 / OTHER FUN PLACES IN CROATIA
         </p>
         <div className="flex sm:flex-row flex-col space-y-3 w-full sm:justify-between">
-          <h1 className="text-4xl font-medium sm:w-1/3 w-full">
+          <h1 className="text-4xl font-medium sm:w-1/3 w-full sm:text-start text-center">
             Other Fun Places in Croatia
           </h1>
-          <div className="flex flex-col space-y-3 sm:w-1/3 w-full">
-            <h1 className="text-xl font-semibold">Filter option</h1>
+          <div className="flex flex-col space-y-3 sm:w-1/3 w-full sm:pt-0 pt-5">
+            <h1 className="text-xl font-semibold sm:text-start text-center">
+              Filter option
+            </h1>
             <Select
               placeholder="All Popular Places"
               rounded={"full"}
