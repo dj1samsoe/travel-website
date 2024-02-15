@@ -1,11 +1,20 @@
+"use client";
 import Breakline from "@/common/components/elements/Breakline";
-import { Button, Checkbox, Input } from "@chakra-ui/react";
+import {
+  Button,
+  Checkbox,
+  Input,
+  InputGroup,
+  InputRightElement,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
-import { FaEye } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 
 export default function Hero() {
+  const [showPassword, setShowPassword] = React.useState(false);
+  const handlePasswordClick = () => setShowPassword(!showPassword);
   return (
     <section className="flex w-full min-h-screen">
       <div
@@ -35,9 +44,29 @@ export default function Hero() {
             <p className="text-lg text-neutral-700 font-medium">or</p>
             <Breakline className="border-neutral-400 w-full" />
           </div>
-          <div className="flex flex-col space-y-5">
+          <div className="flex flex-col space-y-5 font-semibold">
             <Input variant="flushed" type="email" placeholder="Email Address" />
-            <Input variant="flushed" type="password" placeholder="Password" />
+            <InputGroup size="md">
+              <Input
+                pr="4.5rem"
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                variant="flushed"
+              />
+              <InputRightElement width="4.5rem">
+                {showPassword ? (
+                  <FaEyeSlash
+                    onClick={handlePasswordClick}
+                    className="cursor-pointer active:text-neutral-900 text-neutral-500"
+                  />
+                ) : (
+                  <FaEye
+                    onClick={handlePasswordClick}
+                    className="cursor-pointer active:text-neutral-900 text-neutral-500"
+                  />
+                )}
+              </InputRightElement>
+            </InputGroup>
             <div className="flex justify-between items-center">
               <Checkbox>Remember Me</Checkbox>
               <Button colorScheme="messenger" variant={"link"}>
